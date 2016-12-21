@@ -1,0 +1,545 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/amadi_car"
+    tools:context="com.buxmeapp.WelcomeScreen"
+    android:id="@+id/container">
+
+
+
+
+    <!--    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:alpha="0.70"
+            android:background="@color/custom_theme_color_for_transperent_layout"
+            android:orientation="vertical"
+            android:padding="10dp" > -->
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+        <Button android:id="@+id/email_sign_up_button" style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:layout_weight="0.12"
+            android:textStyle="bold"
+            android:background="@color/Purple"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/White"
+            android:layout_margin="5dp"/>
+
+        <Button android:id="@+id/email_sign_in_button"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_weight="0.12"
+            android:textStyle="bold"
+            android:background="@color/Purple"
+            android:textColor="@color/White"
+            android:layout_margin="5dp"
+            android:layout_alignParentBottom="true"
+            />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+     <!--   </LinearLayout> -->
+
+      <!---Linear Layout  for  Login screen  -->
+       <LinearLayout
+           android:id="@+id/linear_login"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentRight="true"
+           android:alpha="0.70"
+           android:background="@color/custom_theme_color_for_transperent_layout"
+           android:orientation="vertical"
+
+           android:visibility="gone"
+           >
+           <RelativeLayout
+               android:layout_width="fill_parent"
+               android:orientation="horizontal"
+               android:layout_height="40dp"
+               android:descendantFocusability="blocksDescendants"
+               android:padding="5dip" >
+           <LinearLayout
+               android:id="@+id/ll_head_bar1"
+               style="@style/header_linear_layout"
+               android:layout_alignParentTop="true" >
+
+               <ImageButton
+                   android:id="@+id/btnBack"
+                   style="@style/header_button_back"
+                   android:src="@drawable/ic_home"
+                   android:layout_marginLeft="8dip" />
+
+               <TextView
+                   android:id="@+id/txtTitle1"
+                   style="@style/header_text_view"
+                   android:text="Select Source Account"
+                   android:textColor = "@color/Black"
+                    />
+
+
+           </LinearLayout>
+  </RelativeLayout>
+           <LinearLayout
+               android:layout_marginTop="40dp"
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentRight="true"
+               android:background="@drawable/rounded_corner"
+               android:orientation="vertical"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:padding="10dp" >
+
+               <TextView android:text="BuxMe"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:textColor="@color/Red"
+                   android:textSize="25sp"/>
+
+           </LinearLayout>
+
+
+           <EditText
+
+               android:id="@+id/txtUsername"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginBottom="10dip"
+               android:hint="BuxMe Username:"
+               android:paddingLeft="5dp"
+               android:drawableLeft="@drawable/ic_action_home"
+               android:inputType="textCapWords"
+               android:lines="1"
+               android:background="@color/White">
+
+           </EditText>
+
+
+
+           <EditText
+               android:id="@+id/txtPass"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:paddingLeft="5dp"
+               android:hint="BuxMe Password:"
+               android:drawableLeft="@drawable/ic_action_home"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:inputType="textPassword"
+               android:lines="1"
+               android:textSize="20sp"
+               android:background="@color/White">
+           </EditText>
+
+           <Button
+               android:id="@+id/loginButton"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:textStyle="bold"
+               android:background="@color/Purple"
+               android:textColor="@color/White"
+               android:text="Login"
+                />
+
+
+      </LinearLayout>
+
+    <!---Linear Layout  for  register screen  -->
+    <LinearLayout
+        android:id="@+id/linear_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.70"
+        android:background="@color/custom_theme_color_for_transperent_layout"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="40dp"
+            android:descendantFocusability="blocksDescendants"
+            android:padding="5dip" >
+            <LinearLayout
+                android:id="@+id/ll_head_bar2"
+                style="@style/header_linear_layout"
+                android:layout_alignParentTop="true" >
+
+                <ImageButton
+                    android:id="@+id/btnBack2"
+                    style="@style/header_button_back"
+                    android:src="@drawable/ic_home"
+                    android:layout_marginLeft="8dip" />
+
+                <TextView
+                    android:id="@+id/txtTitle2"
+                    style="@style/header_text_view"
+                    android:text="Select Source Account"
+                    android:textColor = "@color/Black"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <EditText
+
+            android:id="@+id/txtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dip"
+            android:hint="Full Name:"
+            android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/ic_action_home"
+            android:inputType="textCapWords"
+            android:lines="1"
+            android:background="@color/White">
+
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dip"
+            android:hint="Email:"
+            android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/ic_action_home"
+            android:inputType="textCapWords"
+            android:lines="1"
+            android:background="@color/White">
+
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/txtPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dip"
+            android:hint="Phone No.:"
+            android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/ic_action_home"
+            android:inputType="textCapWords"
+            android:lines="1"
+            android:background="@color/White">
+
+        </EditText>
+
+
+
+        <EditText
+            android:id="@+id/txtPassWord"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="5dp"
+            android:hint=" Password(more than 6 charaters):"
+            android:drawableLeft="@drawable/ic_action_home"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:textSize="20sp"
+            android:background="@color/White">
+        </EditText>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:background="@color/Purple"
+            android:textColor="@color/White"
+            android:text="Submit"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_verification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.70"
+        android:background="@color/custom_theme_color_for_transperent_layout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="40dp"
+            android:descendantFocusability="blocksDescendants"
+            android:padding="5dip" >
+            <LinearLayout
+                android:id="@+id/ll_head_bar3"
+                style="@style/header_linear_layout"
+                android:layout_alignParentTop="true" >
+
+                <ImageButton
+                    android:id="@+id/btnBack3"
+                    style="@style/header_button_back"
+                    android:src="@drawable/ic_home"
+                    android:layout_marginLeft="8dip" />
+
+                <TextView
+                    android:id="@+id/txtTitle3"
+                    style="@style/header_text_view"
+                    android:text="xxxxxxx"
+                    android:textColor = "@color/Black"
+                    />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <EditText
+
+            android:id="@+id/txtVerification"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dip"
+            android:paddingLeft="5dp"
+            android:hint="Verification Code"
+            android:drawableLeft="@drawable/ic_action_home"
+            android:inputType="textCapWords"
+            android:lines="1"
+            android:background="@color/White">
+
+        </EditText>
+
+
+
+
+
+        <Button
+            android:id="@+id/verificationButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:background="@color/Purple"
+            android:textColor="@color/White"
+            android:text="Next"
+            />
+
+
+    </LinearLayout>
+
+
+    <!---Linear Layout  for  uplaod  -->
+    <LinearLayout
+        android:id="@+id/linear_Upload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.70"
+        android:background="@color/custom_theme_color_for_transperent_layout"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="40dp"
+            android:descendantFocusability="blocksDescendants"
+            android:padding="5dip" >
+            <LinearLayout
+                android:id="@+id/ll_head_bar4"
+                style="@style/header_linear_layout"
+                android:layout_alignParentTop="true" >
+
+                <ImageButton
+                    android:id="@+id/btnBack4"
+                    style="@style/header_button_back"
+                    android:src="@drawable/ic_home"
+                    android:layout_marginLeft="8dip" />
+
+                <TextView
+                    android:id="@+id/txtTitle4"
+                    style="@style/header_text_view"
+                    android:text="Select Source Account"
+                    android:textColor = "@color/Black"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <com.buxmeapp.utilities.CircleShape
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/avatar"
+                />
+
+            <TextView
+                android:id="@+id/txtInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Select Profile Photo"
+                android:textColor = "@color/Black"
+                />
+        </LinearLayout>
+
+
+        <EditText
+
+            android:id="@+id/txtBuxMeID"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dip"
+            android:hint="BuxMeID:"
+            android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/ic_action_home"
+            android:inputType="textCapWords"
+            android:lines="1"
+            android:background="@color/White">
+
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/txtPIN"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dip"
+            android:hint="PIN:"
+            android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/ic_action_home"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:background="@color/White">
+
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/txtConfirmPIN"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dip"
+            android:hint="Confirm PIN:"
+            android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/ic_action_home"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:background="@color/White">
+
+        </EditText>
+
+
+
+
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:background="@color/Purple"
+            android:textColor="@color/White"
+            android:text="Submit"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,49 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="android:windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorPrimary">@color/custom_theme_color_for_text</item>
+    <item name="colorPrimaryDark">@color/custom_theme_color_for_text</item>
+    <item name="colorAccent">@color/custom_theme_color_for_text</item>
+</style>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base" />
+
+
+<style name="WizardActionBar">
+<item name="android:layout_width">fill_parent</item>
+<item name="android:layout_height">50dp</item>
+<item name="android:orientation">horizontal</item>
+<item name="android:background">@color/custom_theme_color_for_text</item>
+    <item name="android:alpha">0.70</item>
+</style>
+
+    <style name="header_linear_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="header_text_view" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textSize">@dimen/header_title_text_size</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_height">@dimen/header_button_height</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">标题</item>
+    </style>
+
+    <style name="header_button_back" parent="@android:style/TextAppearance.Widget.Button">
+        <item name="android:layout_height">@dimen/header_button_height</item>
+        <item name="android:layout_width">48dip</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:layout_marginLeft">4dip</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+</resources>

@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">BuxMe</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_notifications">Messages</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+    <string name="title_activity_landing_page">Landing Page</string>
+    <string name="title_activity_login_screen">L</string>
+    <string name="title_activity_upload_pix_screen">Calender</string>
+        <string name="title_activity_main_profile">My Profile</string>
+
+    <string name="title_activity_second">Second Screen</string>
+    <string name="title_activity_user_profile">Calender</string>
+    <string name="title_activity_verification_screen">My Profile</string>
+    <string name="title_activity_welcome_screen">My Profile</string>
+    <string name="profile">My Profile</string>
+    <string name="calender">My Calender</string>
+    <string name="event">Add Events</string>
+    <string name="logOut">Log Out</string>
+    <string name="plot">30 Days In  Atlanta is an adventurous love story – spiced with lots of action and hilarious moments. This a-laugh-a-minute story has been fully researched and well written. It paints, in beautiful colours, the hugely popular (and social media trending)  Akpos character which was created from the AYShow’s Who Wants To Be A Billionaire hilarious skits</string>
+
+    <string-array name="days">
+       <item>1</item>
+        <item>2</item><item>3</item>
+        <item>4</item><item>5</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>1</item>
+        <item>2</item><item>3</item>
+        <item>4</item><item>5</item>
+    </string-array>
+    <string-array name="year">
+        <item>1990</item>
+        <item>1991</item><item>1992</item>
+        <item>1993</item><item>1994</item>
+    </string-array>
+
+    <string-array name="mode_of_contact">
+        <item>BBM</item>
+        <item>WHATSAPP</item><item>TUMBLR</item>
+        <item>FACEBOOK</item>
+        <item>Emaill Address</item>
+        <item>Calling</item>
+    </string-array>
+
+    <string name="select">Select </string>
+
+    <string name="discuss">30 Days In  Atlanta is an adventurous love story – spiced with lots of action and hilarious moments. This a-laugh-a-minute story has been fully researched and well written.</string>
+    <string name="title_activity_questionaire">Questionaire</string>
+    <string name="title_activity_lessons">Lessons</string>
+    <string name="title_activity_lesson_per_week">LessonPerWeek</string>
+    <string name="title_activity_blog_detail">Detail</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_weekly_update">Weekly Update</string>
+    <string name="title_activity_weekly_update_panel">TMP</string>
+    <string name="title_activity_tester">tester</string>
+    <string name="title_activity_frag_one">frag_one</string>
+    <string name="title_activity_frag_two">frag_two</string>
+    <string name="title_activity_meal_plan">Meal Plan</string>
+
+
+
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+    <string name="title_activity_error_page">ErrorPage</string>
+    <string name="title_activity_profile">Profile</string>
+
+
+    <string name="title_activity_testing">Testing</string>
+
+</resources>

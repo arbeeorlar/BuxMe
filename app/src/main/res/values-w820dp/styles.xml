@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/custom_theme_color_for_text</item>
+        <item name="colorPrimaryDark">@color/custom_theme_color_for_text</item>
+        <item name="colorAccent">@color/custom_theme_color_for_text</item>
+    </style>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base" />
+
+
+
+</resources>
